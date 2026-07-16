@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuponlarım | Castapos</title>
+  <meta name="description" content="Kuponlarını görüntüle">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="commerce-header">
+  <div class="container commerce-top">
+    <a class="brand-logo" href="index.html" aria-label="Castapos ana sayfa"><img src="assets/castapos-real-logo.png" alt="Castapos"></a>
+    <form class="main-search" action="kategori.html" method="get"><span class="search-icon">⌕</span><input name="q" autocomplete="off" placeholder="Ürün, kategori veya marka ara"><button type="submit">Ara</button></form>
+    <div class="commerce-actions">
+      <a href="favorilerim.html" class="action-link fav-action"><span class="action-icon">♡</span><small>Favorilerim</small></a>
+      <a href="sepet.html" class="action-link cart-action"><span class="action-icon">🛒</span><small>Sepetim</small><b data-cart-count class="cart-count-pill">0 Ürün</b></a>
+      <div class="account-wrap">
+        <a href="kullanici-bilgilerim.html" class="action-link account-link"><span class="action-icon">👤</span><small>Hesabım</small></a>
+        <div class="account-menu" aria-label="Hesabım menüsü">
+          <a href="kiraladiklarim.html">Kiraladıklarım</a>
+          <a href="kuponlarim.html">Kuponlarım</a>
+          <a href="degerlendirmelerim.html">Değerlendirmelerim</a>
+          <a href="kullanici-bilgilerim.html">Kullanıcı Bilgilerim</a>
+        </div>
+      </div>
+    </div>
+    <button class="mobile-menu-btn" data-mobile-toggle>Menü</button>
+  </div>
+  <nav class="category-bar" aria-label="Kategori menüsü"><div class="container category-scroll" data-nav-categories></div></nav>
+</header><main class="account-page"><section class="account-hero"><div class="container"><nav class="breadcrumb"><a href="kullanici-bilgilerim.html">Hesabım</a> › Kuponlarım</nav><h1>Kuponlarım</h1><p>Hesabına tanımlanan kiralama avantajlarını ve kullanım koşullarını görüntüle.</p></div></section><section class="section"><div class="container coupon-wallet">
+  <article class="premium-coupon active-coupon"><div class="coupon-cut left"></div><div class="coupon-cut right"></div><div class="coupon-value"><small>AYLIK ÖDEMELERDE</small><strong>%10</strong><span>İndirim</span></div><div class="coupon-details"><span class="coupon-state">Kullanıma Hazır</span><h2>Hoş Geldin Kuponu</h2><p>Seçili kiralama planının tüm aylık ödemelerinde geçerlidir.</p><div class="coupon-code-row"><code>merhaba10</code><button type="button" data-copy-coupon="merhaba10">Kodu Kopyala</button></div><div class="coupon-meta"><span class="coupon-expiry">Son kullanım: 31 Aralık 2026</span><span>Alt limit yok</span></div></div></article>
+  <article class="premium-coupon"><div class="coupon-cut left"></div><div class="coupon-cut right"></div><div class="coupon-value secondary"><small>SEÇİLİ ÜRÜNLERDE</small><strong>250 TL</strong><span>İndirim</span></div><div class="coupon-details"><span class="coupon-state upcoming">Yakında Aktif</span><h2>Yeni Sezon Avantajı</h2><p>Yeni eklenen spor ürünlerinde aylık ödemeye uygulanır.</p><div class="coupon-code-row disabled"><code>YENISEZON</code><button type="button" disabled>Henüz Aktif Değil</button></div><div class="coupon-meta"><span>Başlangıç: 01 Ağustos 2026</span><span>Minimum 3 ay</span></div></div></article>
+</div></section></main><footer class="footer">
+  <div class="container footer-grid">
+    <div><img src="assets/castapos-real-logo.png" alt="Castapos"><p>Ürünleri satın almadan önce deneyimleyebileceğin esnek kiralama platformu.</p></div>
+    <div><h4>Kategoriler</h4><a href="kategori.html?cat=Koşu%20Bantları">Koşu Bantları</a><a href="kategori.html?cat=Yürüyüş%20Bantları">Yürüyüş Bantları</a><a href="kategori.html?cat=Bisiklet">Bisiklet</a><a href="kategori.html?cat=Fitness">Fitness</a><a href="kategori.html?cat=Ev%20Aletleri">Ev Aletleri</a><a href="kategori.html?cat=Elektronik">Elektronik</a></div>
+    <div><h4>Castapos</h4><a href="nasil-calisir.html">Nasıl Çalışır?</a><a href="kullanici-bilgilerim.html">Hesabım</a><a href="kiraladiklarim.html">Kiraladıklarım</a><a href="favorilerim.html">Favorilerim</a><a href="kategori.html">Tüm Ürünler</a></div>
+    <div><h4>Yardım</h4><a href="sikca-sorulan-sorular.html">Sıkça Sorulan Sorular</a><a href="iletisim.html">İletişim</a><a href="gizlilik-politikasi.html">Gizlilik Politikası</a><a href="kiralama-kosullari.html">Kiralama Koşulları</a><a href="iptal-iade-kosullari.html">İptal ve İade Koşulları</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© <span data-year></span> Castapos</span><span>Kirala, dene, karar ver.</span></div>
+</footer>
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

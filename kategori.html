@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kategoriler | Castapos</title>
+  <meta name="description" content="Castapos ürün kiralama platformu">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="commerce-header">
+  <div class="container commerce-top">
+    <a class="brand-logo" href="index.html" aria-label="Castapos ana sayfa"><img src="assets/castapos-real-logo.png" alt="Castapos"></a>
+    <form class="main-search" action="kategori.html" method="get">
+      <span class="search-icon">⌕</span>
+      <input name="q" autocomplete="off" placeholder="Ürün, kategori veya marka ara">
+      <button type="submit">Ara</button>
+    </form>
+    <div class="commerce-actions">
+      <a href="favorilerim.html" class="action-link fav-action"><span class="action-icon">♡</span><small>Favorilerim</small></a>
+      <a href="sepet.html" class="action-link cart-action"><span class="action-icon">🛒</span><small>Sepetim</small><b data-cart-count class="cart-count-pill">0 Ürün</b></a>
+      <div class="account-wrap">
+        <a href="kullanici-bilgilerim.html" class="action-link account-link"><span class="action-icon">👤</span><small>Hesabım</small></a>
+        <div class="account-menu" aria-label="Hesabım menüsü">
+          <a href="kiraladiklarim.html">Kiraladıklarım</a>
+          <a href="kuponlarim.html">Kuponlarım</a>
+          <a href="degerlendirmelerim.html">Değerlendirmelerim</a>
+          <a href="kullanici-bilgilerim.html">Kullanıcı Bilgilerim</a>
+        </div>
+      </div>
+    </div>
+    <button class="mobile-menu-btn" data-mobile-toggle>Menü</button>
+  </div>
+  <nav class="category-bar" aria-label="Kategori menüsü">
+    <div class="container category-scroll" data-nav-categories></div>
+  </nav>
+</header>
+
+
+<main>
+  <section class="listing-head slim-listing-head">
+    <div class="container listing-head-inner slim">
+      <nav class="breadcrumb">Ana Sayfa › <span data-category-title>Tüm Ürünler</span></nav>
+      <div class="listing-line"><strong data-listing-h1>Tüm Kiralama Ürünleri</strong><span data-result-count>0 ürün</span></div>
+    </div>
+  </section>
+  <section class="listing-section">
+    <div class="container listing-layout">
+      <aside class="filter-sidebar" data-filter-sidebar>
+        <div class="filter-title">Filtrele</div>
+        <div class="filter-block"><h3>Marka</h3><div class="check-list" data-brand-filters></div></div>
+        <div class="filter-block"><h3 data-type-title>Ürün Tipi</h3><div data-type-filters></div></div>
+        <div class="filter-block"><h3>Kiralama Süresi</h3><label class="fake-check"><input type="checkbox"> 1 Ay</label><label class="fake-check"><input type="checkbox"> 3 Ay</label><label class="fake-check"><input type="checkbox"> 6 Ay</label><label class="fake-check"><input type="checkbox"> 9 Ay</label></div>
+        <div class="filter-block"><h3>Avantajlar</h3><label class="switch-row">Kampanyalı <span></span></label><label class="switch-row">Satın alma opsiyonu <span></span></label><label class="switch-row">Hızlı teslimat <span></span></label></div>
+      </aside>
+      <div class="listing-content">
+        <div class="content-toolbar category-listing-toolbar"><strong data-toolbar-title>Öne çıkan ürünler</strong><div class="toolbar-actions"><input data-search-input placeholder="Ürün adı veya marka ara"><select data-sort><option value="featured">Öne çıkanlar</option><option value="new">Yeni eklenenler</option><option value="popular">Çok satanlar</option><option value="low">Fiyat: düşükten yükseğe</option><option value="high">Fiyat: yüksekten düşüğe</option><option value="name">İsme göre</option></select></div></div>
+        <div class="catalog-grid" data-product-grid></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><img src="assets/castapos-real-logo.png" alt="Castapos"><p>Ürünleri satın almadan önce deneyimleyebileceğin esnek kiralama platformu.</p></div>
+    <div><h4>Kategoriler</h4><a href="kategori.html?cat=Koşu%20Bantları">Koşu Bantları</a><a href="kategori.html?cat=Yürüyüş%20Bantları">Yürüyüş Bantları</a><a href="kategori.html?cat=Bisiklet">Bisiklet</a><a href="kategori.html?cat=Fitness">Fitness</a><a href="kategori.html?cat=Ev%20Aletleri">Ev Aletleri</a><a href="kategori.html?cat=Elektronik">Elektronik</a></div>
+    <div><h4>Castapos</h4><a href="nasil-calisir.html">Nasıl Çalışır?</a><a href="kullanici-bilgilerim.html">Hesabım</a><a href="kiraladiklarim.html">Kiraladıklarım</a><a href="favorilerim.html">Favorilerim</a><a href="kategori.html">Tüm Ürünler</a></div>
+    <div><h4>Yardım</h4><a href="sikca-sorulan-sorular.html">Sıkça Sorulan Sorular</a><a href="iletisim.html">İletişim</a><a href="gizlilik-politikasi.html">Gizlilik Politikası</a><a href="kiralama-kosullari.html">Kiralama Koşulları</a><a href="iptal-iade-kosullari.html">İptal ve İade Koşulları</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© <span data-year></span> Castapos</span><span>Kirala, dene, karar ver.</span></div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
